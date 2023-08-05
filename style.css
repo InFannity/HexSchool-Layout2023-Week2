@@ -47,6 +47,24 @@ table {
 	border-spacing: 0;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+a{
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
 .top-frame{
     background: #000;
     height: 88px;
@@ -62,33 +80,80 @@ table {
 .top-list{
     margin-top: 40px;
     width: 306px;
-    color: white;
     margin-right: 61px;
+    color: white;
 }
 
 .lean-right{
     width: 196px;
     text-align: right;
     margin-right: 0px;
+    color: white;
 }
 
-.ace-font{
-    font-family: 'Bruno Ace SC', cursive;
+
+.linkerW{
+    color: white;
 }
 
-.image{
+.linkerB{
+    color: black;
+}
+
+
+.contact{
     background: #000;
     height: 992px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-
+/*
 .image-person{
     margin-top: 72px;
     margin-bottom: 72px;
 }
+*/
 
-.image-title{
+.contact-block{
     width: 636px;
     height: 528px;
+}
+
+.contact-main{
+    color: white;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 96px;
+    
+}
+
+.contact-name{
+    color: #00FFA3;
+    font-size: 128px;
+    font-weight: 400;
+    line-height: 192px;
+    text-align: right;
+}
+
+.margin12{
+    margin: 0 12px 0 12px;
+}
+
+.contact-block .btn{
+    display: block;
+    width: 185px;
+    height: 48px;
+    background: white;
+    color: #000;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.contact-btn{
+    color: black;
+    display: flex;
+    align-items: center;
 }
