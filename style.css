@@ -53,6 +53,7 @@ table {
 
 body{
     font-family: 'Bruno Ace SC', cursive;
+    font-weight: 400;
 }
 
 a{
@@ -63,6 +64,34 @@ img {
     max-width: 100%;
     height: auto;
     vertical-align: middle;
+}
+
+.font-s16{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.font-sm20{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.font-m24{
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.font-title64{
+    font-size: 64px;
+    line-height: 96px;
+}
+
+.colorW{
+    color: white;
+}
+
+.colorB{
+    color: black;
 }
 
 .top-frame{
@@ -82,22 +111,15 @@ img {
     width: 306px;
     margin-right: 61px;
     color: white;
+    :hover{
+        color: gray
+    }
 }
 
 .lean-right{
     width: 196px;
     text-align: right;
     margin-right: 0px;
-    color: white;
-}
-
-
-.linkerW{
-    color: white;
-}
-
-.linkerB{
-    color: black;
 }
 
 
@@ -108,30 +130,16 @@ img {
     justify-content: center;
     align-items: center;
 }
-/*
-.image-person{
-    margin-top: 72px;
-    margin-bottom: 72px;
-}
-*/
 
 .contact-block{
     width: 636px;
     height: 528px;
 }
 
-.contact-main{
-    color: white;
-    font-size: 64px;
-    font-weight: 400;
-    line-height: 96px;
-    
-}
 
 .contact-name{
     color: #00FFA3;
     font-size: 128px;
-    font-weight: 400;
     line-height: 192px;
     text-align: right;
 }
@@ -140,8 +148,11 @@ img {
     margin: 0 12px 0 12px;
 }
 
-.contact-block .btn{
-    display: block;
+.margin76{
+    margin: 0 76px 0 76px;
+}
+
+.btn{
     width: 185px;
     height: 48px;
     background: white;
@@ -149,11 +160,196 @@ img {
     border-radius: 32px;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-left: auto;
 }
 
-.contact-btn{
-    color: black;
+.btn:hover {
+    background: gray;
+}
+
+.introduction{
+    height:920px;
+    background-image:url("https://github.com/InFannity/HexSchool-Week2/blob/main/image/background-img.png?raw=true");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-left{
+    width: 526px;
+    height: 442px
+}
+
+.introduction-title{
+    color:white;
+    font-size: 64px;
+    line-height: 96px;
+}
+
+.introduction-content{
+    color:white;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 36px;
+}
+
+.introduction-logo{
+    margin-top: 32px;
+    padding: 0px;
+}
+
+.introduction-logo img{
+    margin-right: 16px;
+}
+
+.section-right{
+    width: 746px;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about{
+    height: 740px;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 636px;
+    height: 328px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.card-style{
+    width: 306px;
+    height: 148px;
+    padding: 16px;
+    border: 1px solid #E3E3E3;
+    box-shadow: 4px 4px 4px 0px #00000014;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.about-me{
+    width: 526px;
+    height: 420px
+}
+
+.about-me-content{
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 36px;
+}
+
+.contact-me{
+    height: 354px;
+    background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-me-block{
+    width: 657px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 113px
+}
+
+.contact-me-title{
+    color:white;
+}
+
+.social-block{
+    width: 526px;
+    height: 162px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-block img{
+    border-radius: 40px;
+    box-shadow: 4px 4px 8px 0px #00000014;
+    &:hover{
+        box-shadow: 0px 0px 16px 3px #9094FFE5;
+    }
+}
+
+.project{
+    height: 962px;
+    flex-direction: column;
+}
+
+.footer{
+    background: #000;
+    height:104px;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-title{
+    width: 746px;
+    height: 96px;
+    margin-left: 550px;
+    margin-bottom: 16px;
+}
+
+.project-frame{
+    width: 1296px;
+    height: 530px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-sectionRT{
+    width: 856px;
+    height: 196px;
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-sectionRT-content{
+    width: 636px;
+    height: 196px
+}
+
+.btnB{
+    width: 185px;
+    height: 48px;
+    background: black;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-top:76px; 
+}
+
+.btnB:hover {
+    background: gray;
+}
+
+.project-sectionRB{
+    display: flex;
+    justify-content: space-between;
+    width: 856px;
+    height: 306px
 }
